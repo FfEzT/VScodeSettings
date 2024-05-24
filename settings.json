@@ -1,0 +1,129 @@
+{
+  //Main editor settings
+  "window.openFilesInNewWindow": "off",
+  "editor.tabSize": 2,
+  "editor.folding": true,
+  "editor.insertSpaces": true,
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": true,
+  "editor.suggestSelection": "first",
+  "window.zoomLevel": 0.25,
+
+  // Wrapping
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.wordWrap": "bounded",
+  "editor.wrappingIndent": "same",
+  "editor.wordWrapColumn": 80,
+
+  //Определяет, будет ли редактор прокручиваться за пределы последней строки.
+  "editor.scrollBeyondLastLine": true,
+  // Rename tags
+  "editor.linkedEditing": true,
+
+
+  // Auto closing tags
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+
+  //Определяет, должен ли редактор отображать управляющие символы.
+  "editor.renderControlCharacters": false,
+
+  //Управляет выделением символов, которые можно спутать с основными символами ASCII, кроме тех, которые являются общими для текущего пользовательского языкового стандарта.
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+
+  "editor.quickSuggestionsDelay": 0,
+  "html.completion.attributeDefaultValue": "singlequotes",
+
+  //Appearance
+  "editor.bracketPairColorization.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "workbench.productIconTheme": "fluent-icons",
+  "window.density.editorTabHeight": "compact",
+  "workbench.colorTheme": "Alt Catppuccin Mocha",
+  "editor.accessibilitySupport": "off",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "catppuccin-latte",
+  
+  
+  // Cursor
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  
+  // Font
+  "editor.fontSize": 20,
+  "editor.lineHeight": 28,
+  "editor.fontLigatures": true,
+  "editor.inlayHints.fontFamily": "PragmataPro",
+
+  
+  //Explorer
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  //Разрешить уменьшение размера вкладок, когда доступного места недостаточно для отображения всех вкладок одновременно.
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.startupEditor": "newUntitledFile",
+
+  //Breadcrumbs
+  "breadcrumbs.icons": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showFiles": false,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showConstructors": false,
+
+
+
+
+
+
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.sqlite": "default"
+  },
+  "editor.mouseWheelZoom": true,
+  "sync.gist": "032e579acd63182beea40306bef4653f",
+  "terminal.integrated.tabs.enabled": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.renderWhitespace": "all",
+  "git.confirmSync": false,
+  "editor.autoClosingBrackets": "always",
+  "timeline.excludeSources": [],
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "[dart]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "diffEditor.maxComputationTime": 0,
+    "editor.cursorBlinking": "smooth",
+    "diffEditor.maxFileSize": 0,
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 120
+  },
+  "breadcrumbs.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.defaultInterpreterPath": "C:\\Users\\vlalk\\AppData\\Local\\Microsoft\\WindowsApps\\python3.9.exe",
+}
