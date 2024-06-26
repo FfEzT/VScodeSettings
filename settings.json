@@ -38,7 +38,7 @@
 
   //Appearance
   "editor.bracketPairColorization.enabled": false,
-  "editor.glyphMargin": false,
+  // "editor.glyphMargin": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 6,
   "workbench.productIconTheme": "fluent-icons",
