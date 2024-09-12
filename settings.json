@@ -8,10 +8,14 @@
   "editor.minimap.enabled": false,
   "editor.detectIndentation": false,
   "editor.suggestSelection": "first",
+  "editor.renderWhitespace": "all",
+  "editor.mouseWheelZoom": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.bracketPairColorization.enabled": true,
 
   // Wrapping
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrap": "off",
   "editor.wrappingIndent": "same",
   "editor.wordWrapColumn": 80,
 
@@ -54,8 +58,8 @@
   "editor.hideCursorInOverviewRuler": false,
 
   // Font
-  "editor.fontSize": 20,
-  "editor.lineHeight": 28,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 22,
   "editor.fontLigatures": true,
   "editor.inlayHints.fontFamily": "PragmataPro",
 
@@ -83,61 +87,107 @@
   "breadcrumbs.showEnumMembers": false,
   "breadcrumbs.showConstructors": false,
 
+  // other
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.lineNumbers": "relative",
+  "breadcrumbs.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "diffEditor.hideUnchangedRegions.enabled": true,
 
-
-
-
-
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb",
-    "*.sqlite": "default"
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-t>": false
   },
-  "editor.mouseWheelZoom": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<leader>", "r", "n"], "commands": [":set relativenumber"] },
+    { "before": ["<leader>", "n", "r"], "commands": [":set norelativenumber"] },
+    // splits
+    { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+    { "before": ["<leader>", "h"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":q"] },
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+    { "before": ["<esc>"],
+      "commands": [":nohl"],
+      "silent": true
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+
+    // {
+    //   "before": ["<leader>", "c", "a"],
+    //   "commands": ["editor.action.quickFix"]
+    // },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    { "before": ["leader", "z", "o"], "commands": ["editor.unfoldAll"] },
+    { "before": ["leader", "z", "c"], "commands": ["editor.foldAll"] },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.files.action.focusFilesExplorer"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["<C-w", "+"],
+      "commands": ["workbench.action.increaseViewSize"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["<C-w", "-"],
+      "commands": ["workbench.action.decreaseViewSize"],
+      "when": "editorTextFocus"
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+
+
+
   "sync.gist": "032e579acd63182beea40306bef4653f",
   "terminal.integrated.tabs.enabled": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "editor.renderWhitespace": "all",
   "git.confirmSync": false,
-  "editor.autoClosingBrackets": "always",
   "timeline.excludeSources": [],
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "[dart]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnType": false,
-    "editor.rulers": [
-      80
-    ],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off",
-    "diffEditor.maxComputationTime": 0,
-    "editor.cursorBlinking": "smooth",
-    "diffEditor.maxFileSize": 0,
-    "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 120
-  },
-  "breadcrumbs.enabled": false,
-  "workbench.editor.empty.hint": "hidden",
-"diffEditor.ignoreTrimWhitespace": false,
-"cmake.showOptionsMovedNotification": false,
-"cmake.configureOnOpen": false,
-"diffEditor.hideUnchangedRegions.enabled": true,
-"[markdown]": {
-  "diffEditor.ignoreTrimWhitespace": false
-},
-"remote.SSH.remotePlatform": {
-  "10.209.112.243": "linux"
-},
-"editor.bracketPairColorization.enabled": true,
-"[go]": {
-
-  "editor.insertSpaces": true,
-  "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  }
-},
-"diffEditor.renderSideBySide": true,
 }
