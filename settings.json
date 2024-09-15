@@ -8,10 +8,6 @@
   "editor.minimap.enabled": false,
   "editor.detectIndentation": false,
   "editor.suggestSelection": "first",
-  "editor.renderWhitespace": "all",
-  "editor.mouseWheelZoom": true,
-  "editor.autoClosingBrackets": "always",
-  "editor.bracketPairColorization.enabled": true,
 
   // Wrapping
   "editor.multiCursorModifier": "ctrlCmd",
@@ -47,14 +43,17 @@
   "editor.accessibilitySupport": "off",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "symbols.hidesExplorerArrows": false,
   "workbench.iconTheme": "catppuccin-latte",
+  "editor.lineNumbers": "relative",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.mouseWheelZoom": true,
+  "editor.renderWhitespace": "all",
 
 
   // Cursor
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "line-thin",
-  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.hideCursorInOverviewRuler": false,
 
   // Font
@@ -72,6 +71,7 @@
   "workbench.startupEditor": "newUntitledFile",
 
   //Breadcrumbs
+  "breadcrumbs.enabled": false,
   "breadcrumbs.icons": false,
   "breadcrumbs.showKeys": false,
   "breadcrumbs.showFiles": false,
@@ -88,12 +88,11 @@
   "breadcrumbs.showConstructors": false,
 
   // other
+  "git.confirmSync": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.lineNumbers": "relative",
-  "breadcrumbs.enabled": false,
-  "workbench.editor.empty.hint": "hidden",
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.autoClosingBrackets": "always",
+
 
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
@@ -102,6 +101,31 @@
     "<C-t>": false
   },
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "commands": ["cursorDown"],
+      "when": "textInputFocus",
+      "silent": true
+    },
+    {
+      "before": ["k"],
+      "commands": ["cursorUp"],
+      "when": "textInputFocus",
+      "silent": true
+    },
+    {
+      "before": ["l"],
+      "commands": ["cursorRight"],
+      "silent": true,
+      "when": "textInputFocus"
+    },
+    {
+      "before": ["h"],
+      "commands": ["cursorLeft"],
+      "silent": true,
+      "when": "textInputFocus" 
+    },
+
     { "before": ["<leader>", "r", "n"], "commands": [":set relativenumber"] },
     { "before": ["<leader>", "n", "r"], "commands": [":set norelativenumber"] },
     // splits
@@ -181,13 +205,4 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-
-
-
-  "sync.gist": "032e579acd63182beea40306bef4653f",
-  "terminal.integrated.tabs.enabled": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "git.confirmSync": false,
-  "timeline.excludeSources": [],
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
 }
