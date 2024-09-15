@@ -57,8 +57,8 @@
   "editor.hideCursorInOverviewRuler": false,
 
   // Font
-  "editor.fontSize": 18,
-  "editor.lineHeight": 22,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 20,
   "editor.fontLigatures": true,
   "editor.inlayHints.fontFamily": "PragmataPro",
 
@@ -185,14 +185,33 @@
       "when": "editorTextFocus"
     },
     {
-      "before": ["<C-w", "+"],
+      "before": ["<C-w>", "+"],
       "commands": ["workbench.action.increaseViewSize"],
       "when": "editorTextFocus"
     },
     {
-      "before": ["<C-w", "-"],
+      "before": ["<C-w>", "-"],
       "commands": ["workbench.action.decreaseViewSize"],
       "when": "editorTextFocus"
+    },
+
+    {
+      "before": ["<C-w>", "("],
+      "commands": ["editor.action.fontZoomIn"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["<C-w>", ")"],
+      "commands": ["editor.action.fontZoomOut"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["T", "("],
+      "commands": ["workbench.action.terminal.fontZoomIn"],
+    },
+    {
+      "before": ["T", ")"],
+      "commands": ["workbench.action.terminal.fontZoomOut"],
     },
   ],
   "vim.visualModeKeyBindings": [
