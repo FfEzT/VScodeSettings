@@ -73,13 +73,8 @@
   {
     "key": "shift+a",
     "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
+    "when": "filesExplorerFocus && !inputFocus"
   },
-  // {
-  //   "key": "shift+n",
-  //   "command": "workbench.action.newWindow",
-  //   "when": "!explorerViewletFocus"
-  // },
   {
     "key": "d",
     "command": "deleteFile",

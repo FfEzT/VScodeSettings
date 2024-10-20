@@ -4,14 +4,14 @@
   "editor.tabSize": 2,
   "editor.folding": true,
   "editor.insertSpaces": true,
-  "editor.smoothScrolling": true,
+  "editor.smoothScrolling": false,
   "editor.minimap.enabled": false,
   "editor.detectIndentation": false,
   "editor.suggestSelection": "first",
 
   // Wrapping
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
   "editor.wordWrapColumn": 80,
 
@@ -100,37 +100,33 @@
     "<C-f>": false,
     "<C-t>": false
   },
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["j"],
-      "commands": ["cursorDown"],
-      "when": "textInputFocus",
-      "silent": true
-    },
-    {
-      "before": ["k"],
-      "commands": ["cursorUp"],
-      "when": "textInputFocus",
-      "silent": true
-    },
-    {
-      "before": ["l"],
-      "commands": ["cursorRight"],
-      "silent": true,
-      "when": "textInputFocus"
-    },
-    {
-      "before": ["h"],
-      "commands": ["cursorLeft"],
-      "silent": true,
-      "when": "textInputFocus" 
-    },
+   "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["J"],
+        "after" : ["g", "j"]
+      },
+      {
+        "before": ["K"],
+        "after" : ["g", "k"]
+      },
+  //   {
+  //     "before": ["l"],
+  //     "commands": ["cursorRight"],
+  //     "silent": true,
+  //     "when": "textInputFocus"
+  //   },
+  //   {
+  //     "before": ["h"],
+  //     "commands": ["cursorLeft"],
+  //     "silent": true,
+  //     "when": "textInputFocus" 
+  //   },
 
     { "before": ["<leader>", "r", "n"], "commands": [":set relativenumber"] },
     { "before": ["<leader>", "n", "r"], "commands": [":set norelativenumber"] },
     // splits
     { "before": ["<leader>", "v"], "commands": [":vsplit"] },
-    { "before": ["<leader>", "h"], "commands": [":split"] },
+    { "before": ["<leader>", "V"], "commands": [":split"] },
 
     // panes
     {
@@ -215,6 +211,14 @@
     },
   ],
   "vim.visualModeKeyBindings": [
+      {
+        "before": ["J"],
+        "after" : ["g", "j"]
+      },
+      {
+        "before": ["K"],
+        "after" : ["g", "k"]
+      },
     // Stay in visual mode while indenting
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
     { "before": [">"], "commands": ["editor.action.indentLines"] },
@@ -223,5 +227,5 @@
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
-  ],
+],
 }
