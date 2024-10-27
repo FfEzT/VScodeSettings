@@ -91,10 +91,6 @@
     "command": "workbench.action.files.newUntitledFile"
   },
   {
-    "key": "alt+`",
-    "command": "toggleVim"
-  },
-  {
     "key": "alt+a",
     "command": "workbench.files.action.showActiveFileInExplorer"
   },
@@ -118,5 +114,13 @@
     "key": "ctrl+j ctrl+j",
     "command": "workbench.action.terminal.focus",
     "when": "view.terminal.visible && !terminalFocus"
+  },
+  {
+    "key": "shift+alt+`",
+    "command": "vscode-neovim.stop"
+  },
+  {
+    "key": "alt+`",
+    "command": "vscode-neovim.restart"
   },
 ]
