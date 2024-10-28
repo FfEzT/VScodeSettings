@@ -104,10 +104,8 @@
   "vscode-neovim.ctrlKeysForNormalMode": [
     "a",
     "b",
-    "c",
     "d",
     "e",
-    "f",
     "h",
     "i",
     "j",
@@ -119,6 +117,7 @@
     "t",
     "u",
     "v",
+    "w",
     "x",
     "y",
     "z",

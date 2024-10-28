@@ -123,4 +123,12 @@
     "key": "alt+`",
     "command": "vscode-neovim.restart"
   },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
 ]
