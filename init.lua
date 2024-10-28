@@ -23,6 +23,12 @@ vim.keymap.set('n', '<Esc>', '<cmd> nohl <CR>')
 vim.keymap.set('v', "<", '<gv')
 vim.keymap.set('v', ">", '>gv')
 
+vim.keymap.set('v', '<C-c>', 'y')
+
+-- skip folds (down, up)
+vim.cmd('nmap j gj')
+vim.cmd('nmap k gk')
+
 
 if vim.g.vscode then
   local vscode = require('vscode')
@@ -41,9 +47,10 @@ if vim.g.vscode then
   vim.keymap.set('n', "<leader>nr", "<Cmd>set norelativenumber<CR>")
 
   vim.keymap.set('n', "<leader>w", "<Cmd>w!<CR>")
-  vim.keymap.set('n', "<leader>q", "<Cmd>q!<CR>")
-  vim.keymap.set('n', "<leader>x", "<Cmd>q<CR>")
+  vim.keymap.set('n', "<leader>q", "<Cmd>lua require('vscode').action('workbench.action.revertAndCloseActiveEditor')<CR>")
+  vim.keymap.set('n', "<leader>x", "<Cmd>lua require('vscode').action('workbench.action.closeActiveEditor')<CR>")
 
+  vim.keymap.set('n', "<leader>d", "0d$")
 
   vim.keymap.set({'n', 'v'}, "<leader>c", "<Cmd>lua require('vscode').action('editor.action.commentLine')<CR>")
 
@@ -53,3 +60,4 @@ if vim.g.vscode then
 else
   -- ordinary Neovim
 end
+
