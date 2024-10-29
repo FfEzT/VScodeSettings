@@ -29,6 +29,8 @@ vim.keymap.set('v', '<C-c>', 'y')
 vim.cmd('nmap j gj')
 vim.cmd('nmap k gk')
 
+vim.keymap.set('n', "<leader>d", "0d$")
+
 
 if vim.g.vscode then
   local vscode = require('vscode')
@@ -50,7 +52,7 @@ if vim.g.vscode then
   vim.keymap.set('n', "<leader>q", "<Cmd>lua require('vscode').action('workbench.action.revertAndCloseActiveEditor')<CR>")
   vim.keymap.set('n', "<leader>x", "<Cmd>lua require('vscode').action('workbench.action.closeActiveEditor')<CR>")
 
-  vim.keymap.set('n', "<leader>d", "0d$")
+  vim.keymap.set('n', "<leader>e", "<Cmd>lua require('vscode').action('workbench.explorer.fileView.focus')<CR>")
 
   vim.keymap.set({'n', 'v'}, "<leader>c", "<Cmd>lua require('vscode').action('editor.action.commentLine')<CR>")
 
