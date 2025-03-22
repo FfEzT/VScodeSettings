@@ -1,133 +1,137 @@
 {
-  //Main editor settings
-  "window.openFilesInNewWindow": "off",
-  "editor.tabSize": 2,
-  "editor.folding": true,
-  "editor.insertSpaces": true,
-  "editor.smoothScrolling": false,
-  "editor.minimap.enabled": false,
-  "editor.detectIndentation": false,
-  "editor.suggestSelection": "first",
+    "python.languageServer": "Pylance",
+    //Main editor settings
+    "window.openFilesInNewWindow": "off",
+    "editor.tabSize": 4,
+    "editor.folding": true,
+    "editor.insertSpaces": true,
+    "editor.smoothScrolling": false,
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+    "editor.suggestSelection": "first",
 
-  // Wrapping
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.wordWrap": "on",
-  "editor.wrappingIndent": "same",
-  "editor.wordWrapColumn": 80,
-  "editor.rulers": [
-    80,
-    120
-  ],
-  //Определяет, будет ли редактор прокручиваться за пределы последней строки.
-  "editor.scrollBeyondLastLine": true,
-  // Rename tags
-  "editor.linkedEditing": true,
-  "files.insertFinalNewline": true, // вставляет пустую строку в конце при сохранении
+    // Wrapping
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    //Определяет, будет ли редактор прокручиваться за пределы последней строки.
+    "editor.scrollBeyondLastLine": true,
+    // Rename tags
+    "editor.linkedEditing": true,
+    "files.insertFinalNewline": true, // вставляет пустую строку в конце при сохранении
 
-  // Auto closing tags
-  "html.autoClosingTags": true,
-  "javascript.autoClosingTags": true,
-  "typescript.autoClosingTags": true,
+    // Auto closing tags
+    "html.autoClosingTags": true,
+    "javascript.autoClosingTags": true,
+    "typescript.autoClosingTags": true,
 
-  //Определяет, должен ли редактор отображать управляющие символы.
-  "editor.renderControlCharacters": false,
+    //Определяет, должен ли редактор отображать управляющие символы.
+    "editor.renderControlCharacters": false,
 
-  //Управляет выделением символов, которые можно спутать с основными символами ASCII, кроме тех, которые являются общими для текущего пользовательского языкового стандарта.
-  "editor.unicodeHighlight.ambiguousCharacters": false,
+    //Управляет выделением символов, которые можно спутать с основными символами ASCII, кроме тех, которые являются общими для текущего пользовательского языкового стандарта.
+    "editor.unicodeHighlight.ambiguousCharacters": false,
 
-  "editor.quickSuggestionsDelay": 0,
-  "html.completion.attributeDefaultValue": "singlequotes",
-  // "editor.glyphMargin": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 15,
-  "workbench.productIconTheme": "fluent-icons",
-  "window.density.editorTabHeight": "compact",
-  "workbench.colorTheme": "Visual Studio Dark",
-  "editor.accessibilitySupport": "off",
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.iconTheme": "catppuccin-latte",
-  "editor.lineNumbers": "relative",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.mouseWheelZoom": true,
-  "editor.renderWhitespace": "all",
+    "editor.quickSuggestionsDelay": 0,
+    "html.completion.attributeDefaultValue": "singlequotes",
+    // "editor.glyphMargin": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 15,
+    "workbench.productIconTheme": "fluent-icons",
+    "window.density.editorTabHeight": "compact",
+    "workbench.colorTheme": "Default Dark+",
+    "editor.accessibilitySupport": "off",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "catppuccin-latte",
+    "editor.lineNumbers": "relative",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "all",
 
 
-  // Cursor
-  "editor.cursorBlinking": "solid",
-  "editor.cursorStyle": "line-thin",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.hideCursorInOverviewRuler": false,
+    // Cursor
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.hideCursorInOverviewRuler": false,
 
-  // Font
-  "editor.fontSize": 16,
-  "editor.lineHeight": 20,
-  "editor.fontLigatures": true,
-  "editor.inlayHints.fontFamily": "PragmataPro",
+    // Font
+    "editor.fontSize": 16,
+    "editor.lineHeight": 20,
+    "editor.fontLigatures": true,
+    "editor.inlayHints.fontFamily": "PragmataPro",
 
-  //Explorer
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "explorer.confirmDragAndDrop": false,
-  //Разрешить уменьшение размера вкладок, когда доступного места недостаточно для отображения всех вкладок одновременно.
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.startupEditor": "newUntitledFile",
+    //Explorer
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    //Разрешить уменьшение размера вкладок, когда доступного места недостаточно для отображения всех вкладок одновременно.
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.startupEditor": "newUntitledFile",
 
-  //Breadcrumbs
-  "breadcrumbs.enabled": false,
-  "breadcrumbs.icons": false,
-  "breadcrumbs.showKeys": false,
-  "breadcrumbs.showFiles": false,
-  "breadcrumbs.symbolPath": "off",
-  "breadcrumbs.showArrays": false,
-  "breadcrumbs.showEvents": false,
-  "breadcrumbs.showFields": false,
-  "breadcrumbs.showClasses": false,
-  "breadcrumbs.showMethods": false,
-  "breadcrumbs.showBooleans": false,
-  "breadcrumbs.showFunctions": false,
-  "breadcrumbs.showConstants": false,
-  "breadcrumbs.showEnumMembers": false,
-  "breadcrumbs.showConstructors": false,
+    //Breadcrumbs
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
 
-  // other
-  "git.confirmSync": false,
-  "diffEditor.ignoreTrimWhitespace": true,
-  "diffEditor.renderSideBySide": true,
-  "editor.autoClosingBrackets": "always",
-  "vscode-neovim.neovimInitVimPaths.win32": "E:\\Materials\\FfEzT\\init.lua",
-  "settingsSync.ignoredSettings": [
-    "vscode-neovim.neovimExecutablePaths.win32",
-    "vscode-neovim.neovimInitVimPaths.win32"
-  ],
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
-  "vscode-neovim.ctrlKeysForNormalMode": [
-    "a",
-    "b",
-    "d",
-    "e",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "o",
-    "r",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-    "/",
-    "]",
-    "right",
-    "left",
-    "up",
-    "down",
-    "backspace",
-    "delete"
-  ],
+    // other
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderSideBySide": true,
+    "editor.autoClosingBrackets": "always",
+    "settingsSync.ignoredSettings": [
+        "vscode-neovim.neovimExecutablePaths.win32",
+        "vscode-neovim.neovimInitVimPaths.win32"
+    ],
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "d",
+        "e",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
 }
+
