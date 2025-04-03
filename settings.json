@@ -9,6 +9,8 @@
     "editor.minimap.enabled": false,
     "editor.detectIndentation": false,
     "editor.suggestSelection": "first",
+    "files.trimTrailingWhitespace": true,
+
 
     // Wrapping
     "editor.multiCursorModifier": "ctrlCmd",
