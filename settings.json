@@ -129,6 +129,19 @@
         "backspace",
         "delete"
     ],
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "d",
+        "h",
+        "j",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "w"
+    ],
+
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
